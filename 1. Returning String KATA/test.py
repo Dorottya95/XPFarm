@@ -1,5 +1,5 @@
 import unittest as test
-from kata_1_returning_string import greet, check_string
+from main import greet, check_string
 
 
 class TestString(test.TestCase):
