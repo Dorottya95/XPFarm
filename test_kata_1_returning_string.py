@@ -3,11 +3,15 @@ from kata_1_returning_string import greet, check_string
 
 
 class TestString(test.TestCase):
-    def basic_test_cases():
-        test.assert_equals(greet('Ryan'), "Hello, Ryan how are you doing today?")
-        test.assert_equals(greet('Shingles'), "Hello, Shingles how are you doing today?")
-    def check_if_string(self):
+    def test_basic_test_cases(self):
+        self.assertEqual(greet('Ryan'), "Hello, Ryan how are you doing today?")
+
+    def test_check_if_string(self):
         self.assertEqual(check_string('string'), True)
+
+    def test_check_if_not_string(self):
+        self.assertEqual(check_string(5), False)
+
 
 if __name__ == '__main__':
     test.main()
