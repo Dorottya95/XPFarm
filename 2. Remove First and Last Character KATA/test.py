@@ -1,22 +1,18 @@
-from unittest import TestCase
+import unittest as test
+from main import remove_char, check_string
 
 
-class Test(TestCase):
-    def test_remove_char(self):
-        self.fail()
+class TestString(test.TestCase):
+    def test_basic_test_cases(self):
+        self.assertEqual(remove_char('test'), 'es')
+        self.assertEqual(remove_char('long test'), 'ong tes')
 
-'''
-import codewars_test as test
-from solution import remove_char
+    def test_check_if_string(self):
+        self.assertEqual(check_string('test'), True)
 
-@test.describe("Fixed Tests")
-def basic_tests():
-    @test.it('Basic Test Cases')
-    def basic_test_cases():
-        test.assert_equals(remove_char('eloquent'), 'loquen')
-        test.assert_equals(remove_char('country'), 'ountr')
-        test.assert_equals(remove_char('person'), 'erso')
-        test.assert_equals(remove_char('place'), 'lac')
-        test.assert_equals(remove_char('ok'), '')
-        test.assert_equals(remove_char('ooopsss'), 'oopss')
-'''
+    def test_check_if_not_string(self):
+        self.assertEqual(check_string(33), False)
+
+
+if __name__ == '__main__':
+    test.main()

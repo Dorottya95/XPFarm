@@ -2,6 +2,7 @@ def remove_char(s):
     return s[1:-1]
 
 
-remove_char('string')
+def check_string(s):
+    return isinstance(s, str)
 
 
