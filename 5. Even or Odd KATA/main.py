@@ -1,9 +1,9 @@
 def even_or_odd(number):
     if check_int(number):
         if number % 2 == 0:
-            return "Even."
+            return "Even"
         else:
-            return "Odd."
+            return "Odd"
     else:
         return "Input is not integer."
 
