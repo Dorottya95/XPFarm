@@ -8,6 +8,3 @@ def solve(nums, div):
             solve_list.append(i)
     return solve_list
 
-
-solve([], 2)
-
