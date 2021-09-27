@@ -13,4 +13,5 @@ KATAs
 6. https://www.codewars.com/kata/5cd5ba1ce4471a00256930c0/train/python
 7. https://www.codewars.com/kata/5acc3634c6fde760ec0001f7/train/python
 8. https://www.codewars.com/kata/597754ba62f8a19c98000030/train/python
-9. 
+9. https://www.codewars.com/kata/59b843b58bcb7766660000f6/train/python
+10. https://www.codewars.com/kata/546e2562b03326a88e000020/train/python
