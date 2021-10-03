@@ -19,3 +19,5 @@ KATAs
 09.27.
 
 11. https://www.codewars.com/kata/56606694ec01347ce800001b/train/python
+12. https://www.codewars.com/kata/588f5a38ec641b411200005b/train/python
+13. 
