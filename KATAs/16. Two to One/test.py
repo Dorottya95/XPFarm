@@ -1,12 +1,12 @@
 import unittest as test
-from main import longest
+from main import check_string, remove_duplicates
 
 
 class TestString(test.TestCase):
     def test_basic_test_cases(self):
-        self.assertEqual(longest("string", "string2"), True)
+        self.assertEqual(check_string("string", "string2"), True)
     def test_basic_test_cases(self):
-        self.assertEqual(longest("sttttriiing", "string"), "string", "string")
+        self.assertEqual(remove_duplicates("sttttriiing", "string"), ["string", "string"])
 
 
 if __name__ == '__main__':
