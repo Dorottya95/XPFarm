@@ -19,4 +19,7 @@ def remove_duplicates(a1, a2):
     return inputs
 
 
-#remove_duplicates("stttringggg", "strinnnng")
+def longest(a1, a2):
+    return
+
+
