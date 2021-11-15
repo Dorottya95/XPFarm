@@ -34,5 +34,8 @@ def check_win_col(board, player):
 
 
 def check_win_row(board, player):
-    return True
+    if (board[1] == player and board[2] == player and board[3] == player) or \
+            (board[4] == player and board[5] == player and board[6] == player) or \
+            (board[7] == player and board[8] == player and board[9] == player):
+        return str(player) + " won"
 
