@@ -22,3 +22,7 @@ def handle_turn(position, initial_board, player, free_position_list):
         time.sleep(2)
         print(display_board(initial_board))
         return display_board(initial_board)
+
+
+def check_win_col(board, player):
+    return True

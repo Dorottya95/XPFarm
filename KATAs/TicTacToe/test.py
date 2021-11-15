@@ -34,6 +34,12 @@ class TestClass(unittest.TestCase):
      | | """
         self.assertEqual(output_board, main.handle_turn(2, board, "X", list(board.keys())))
 
+    def test_check_win_col(self):
+        """Check if a player wins with a column of same marks"""
+        board = {1: ' ', 2: ' ', 3: ' ', 4: ' ', 5: ' ', 6: ' ', 7: ' ', 8: ' ', 9: ' '}
+        self.assertEqual(main.check_win_col(board, "X"), "X won")
+        self.assertEqual(main.check_win_col(board, "O"), "O won")
+
 
 if __name__ == '__main__':
     unittest.main()
