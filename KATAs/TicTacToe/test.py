@@ -83,10 +83,11 @@ class TestClass(unittest.TestCase):
 
 
 class TestRandom(TestCase):
-    @mock.patch("TicTacToe.playing.random.choice")
+
+    @mock.patch("random.choice")
     def test_playing(self, mock_choice):
         """Game simulation"""
-        mock_choice.side_effect = [2, 3, 5, 1, 7]
+        mock_choice.side_effect = [2, 3, 5, 1, 8]
         result = main.playing()
         self.assertEqual(result, "X won")
 

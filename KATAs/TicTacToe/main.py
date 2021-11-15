@@ -59,13 +59,13 @@ def playing():
             check_win_row(board, "X") or check_win_row(board, "O") or \
             check_win_diagonal(board, "X") or check_win_diagonal(board, "O"):
             print("O won")
-            break
+            return "O won"
         handle_turn(random.choice(free_position_list), board, "X", free_position_list)
         if check_win_col(board, "X") or check_win_col(board, "O") or \
                 check_win_row(board, "X") or check_win_row(board, "O") or \
                 check_win_diagonal(board, "X") or check_win_diagonal(board, "O"):
             print("X won")
-            break
+            return "X won"
         handle_turn(random.choice(free_position_list), board, "O", free_position_list)
     else:
         handle_turn(random.choice(free_position_list), board, "X", free_position_list)
@@ -79,5 +79,6 @@ def playing():
             return "Draw"
 
 
-playing()
+if __name__ == '__main__':
+    playing()
 
