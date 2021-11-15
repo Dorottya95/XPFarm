@@ -83,7 +83,6 @@ class TestClass(unittest.TestCase):
 
 
 class TestRandom(TestCase):
-
     @mock.patch("TicTacToe.playing.random.choice")
     def test_playing(self, mock_choice):
         """Game simulation"""
