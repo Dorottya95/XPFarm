@@ -24,22 +24,23 @@ Guardians:
 8. player O won with a horizontal line 🌞
 9. player X won with a diagonal line 🌞
 10. player O won with a diagonal line 🌞
-11. game ended with a draw
+11. game ended with a draw 🌞
 
 Steps/Process:
 1. create a board 🌞
 2. display the board 🌞
-3. play the game:
-   1. swap between players
+3. play the game: 🌞
+   1. swap between players 🌞
    2. remove used spaces 🌞
-4. check if there is a winner:
+4. check if there is a winner: 🌞
    1. check columns 🌞
    2. check rows 🌞
    3. check diagonals 🌞
-   4. end the game if there is a winner
-5. check draw
+   4. end the game if there is a winner 🌞
+5. check draw 🌞
 
 DevOps:
 - do we need bigger board than 3x3
 - who should start the game
 - can we have more than 2 players
+- playing() >> if parts should be extracted to a function

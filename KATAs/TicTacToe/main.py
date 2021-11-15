@@ -1,4 +1,5 @@
 import time
+import random
 
 
 def create_initial_board():
@@ -51,5 +52,31 @@ def check_win_diagonal(board, player):
 
 
 def playing():
-    return True
+    board = create_initial_board()
+    free_position_list = list(board.keys())
+    while len(free_position_list) > 1:
+        if check_win_col(board, "X") or check_win_col(board, "O") or \
+            check_win_row(board, "X") or check_win_row(board, "O") or \
+            check_win_diagonal(board, "X") or check_win_diagonal(board, "O"):
+            print("O won")
+            break
+        handle_turn(random.choice(free_position_list), board, "X", free_position_list)
+        if check_win_col(board, "X") or check_win_col(board, "O") or \
+                check_win_row(board, "X") or check_win_row(board, "O") or \
+                check_win_diagonal(board, "X") or check_win_diagonal(board, "O"):
+            print("X won")
+            break
+        handle_turn(random.choice(free_position_list), board, "O", free_position_list)
+    else:
+        handle_turn(random.choice(free_position_list), board, "X", free_position_list)
+        if check_win_col(board, "X") or check_win_col(board, "O") or \
+                check_win_row(board, "X") or check_win_row(board, "O") or \
+                check_win_diagonal(board, "X") or check_win_diagonal(board, "O"):
+            print("X won")
+            return "X won"
+        else:
+            print("Draw")
+            return "Draw"
+
+playing()
 
