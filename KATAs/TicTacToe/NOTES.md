@@ -17,7 +17,7 @@ Guardians:
     | |
    -+-+-
     | |
-4. moves should be handled (e.g. switching between players)
+4. moves should be handled (e.g. switching between players) 🌞
 5. player X won with a vertical line
 6. player O won with a vertical line
 7. player X won with a horizontal line
@@ -31,7 +31,7 @@ Steps/Process:
 2. display the board 🌞
 3. play the game:
    1. swap between players
-   2. remove used spaces
+   2. remove used spaces 🌞
 4. check if there is a winner:
    1. check columns
    2. check rows
