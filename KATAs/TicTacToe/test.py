@@ -23,6 +23,17 @@ class TestClass(unittest.TestCase):
      | | """
         self.assertEqual(output_board, main.display_board(initial_board))
 
+    def test_handle_turn(self):
+        """Test handle turn function"""
+        board = {1: ' ', 2: ' ', 3: ' ', 4: ' ', 5: ' ', 6: ' ', 7: ' ', 8: ' ', 9: ' '}
+        output_board = """
+     |X| 
+    -+-+-
+     | | 
+    -+-+-
+     | | """
+        self.assertEqual(output_board, main.handle_turn(2, board, "X", list(board.keys())))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -10,3 +10,7 @@ def display_board(initial_board):
     -+-+-
     {}|{}|{}"""
     return board_template.format(*initial_board.values())
+
+
+def handle_turn(position, initial_board, player, free_position_list):
+    return True
