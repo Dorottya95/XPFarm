@@ -3,4 +3,10 @@ def create_initial_board():
 
 
 def display_board(initial_board):
-    return initial_board
+    board_template = """
+    {}|{}|{}
+    -+-+-
+    {}|{}|{}
+    -+-+-
+    {}|{}|{}"""
+    return board_template.format(*initial_board.values())

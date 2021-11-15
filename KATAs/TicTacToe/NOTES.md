@@ -9,9 +9,9 @@ game ends with a draw.
 Done = 🌞
 
 Guardians:
-1. the initial game board should be an empty 3x3 matrix
-2. negative scenario: board is not empty
-3. board should be displayed like this:
+1. the initial game board should be an empty 3x3 matrix 🌞
+2. negative scenario: board is not empty 🌞
+3. board should be displayed like this: 🌞
     | |
    -+-+-
     | |
@@ -27,8 +27,8 @@ Guardians:
 11. game ended with a draw
 
 Steps/Process:
-1. create a board
-2. display the board
+1. create a board 🌞
+2. display the board 🌞
 3. play the game:
    1. swap between players
    2. remove used spaces
