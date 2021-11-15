@@ -33,5 +33,6 @@ def check_win_col(board, player):
         return False
 
 
-
+def check_win_row(board, player):
+    return True
 

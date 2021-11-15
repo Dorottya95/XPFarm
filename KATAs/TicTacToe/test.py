@@ -48,6 +48,13 @@ class TestClass(unittest.TestCase):
         board = {1: ' ', 2: 'O', 3: ' ', 4: 'X', 5: ' ', 6: ' ', 7: 'X', 8: ' ', 9: ' '}
         self.assertEqual(main.check_win_col(board, "O"), False)
 
+    def test_check_win_row(self):
+        """Check if a player wins with a row of same marks"""
+        board = {1: 'X', 2: 'X', 3: 'X', 4: 'O', 5: ' ', 6: ' ', 7: 'O', 8: ' ', 9: ' '}
+        self.assertEqual(main.check_win_row(board, "X"), "X won")
+        board = {1: 'O', 2: 'O', 3: 'O', 4: 'X', 5: ' ', 6: ' ', 7: 'X', 8: ' ', 9: ' '}
+        self.assertEqual(main.check_win_row(board, "O"), "O won")
+
 
 if __name__ == '__main__':
     unittest.main()
