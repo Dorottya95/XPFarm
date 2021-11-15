@@ -22,8 +22,8 @@ Guardians:
 6. player O won with a vertical line 🌞
 7. player X won with a horizontal line 🌞
 8. player O won with a horizontal line 🌞
-9. player X won with a diagonal line
-10. player O won with a diagonal line
+9. player X won with a diagonal line 🌞
+10. player O won with a diagonal line 🌞
 11. game ended with a draw
 
 Steps/Process:
@@ -35,7 +35,7 @@ Steps/Process:
 4. check if there is a winner:
    1. check columns 🌞
    2. check rows 🌞
-   3. check diagonals
+   3. check diagonals 🌞
    4. end the game if there is a winner
 5. check draw
 

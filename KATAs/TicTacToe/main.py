@@ -43,5 +43,7 @@ def check_win_row(board, player):
 
 
 def check_win_diagonal(board, player):
-    return True
+    if (board[1] == player and board[5] == player and board[9] == player) or \
+            (board[3] == player and board[5] == player and board[7] == player):
+        return str(player) + " won"
 
