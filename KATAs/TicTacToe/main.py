@@ -25,4 +25,10 @@ def handle_turn(position, initial_board, player, free_position_list):
 
 
 def check_win_col(board, player):
-    return True
+    if (board[1] == player and board[4] == player and board[7] == player) or \
+            (board[2] == player and board[5] == player and board[8] == player) or \
+            (board[3] == player and board[6] == player and board[9] == player):
+        return str(player) + " won"
+    else:
+        return False
+

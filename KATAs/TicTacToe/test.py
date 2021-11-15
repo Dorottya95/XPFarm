@@ -36,8 +36,9 @@ class TestClass(unittest.TestCase):
 
     def test_check_win_col(self):
         """Check if a player wins with a column of same marks"""
-        board = {1: ' ', 2: ' ', 3: ' ', 4: ' ', 5: ' ', 6: ' ', 7: ' ', 8: ' ', 9: ' '}
+        board = {1: 'X', 2: ' ', 3: ' ', 4: 'X', 5: ' ', 6: ' ', 7: 'X', 8: ' ', 9: ' '}
         self.assertEqual(main.check_win_col(board, "X"), "X won")
+        board = {1: 'O', 2: ' ', 3: ' ', 4: 'O', 5: ' ', 6: ' ', 7: 'O', 8: ' ', 9: ' '}
         self.assertEqual(main.check_win_col(board, "O"), "O won")
 
 

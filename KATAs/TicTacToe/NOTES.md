@@ -18,8 +18,8 @@ Guardians:
    -+-+-
     | |
 4. moves should be handled (e.g. switching between players) 🌞
-5. player X won with a vertical line
-6. player O won with a vertical line
+5. player X won with a vertical line 🌞
+6. player O won with a vertical line 🌞
 7. player X won with a horizontal line
 8. player O won with a horizontal line
 9. player X won with a diagonal line
@@ -33,7 +33,7 @@ Steps/Process:
    1. swap between players
    2. remove used spaces 🌞
 4. check if there is a winner:
-   1. check columns
+   1. check columns 🌞
    2. check rows
    3. check diagonals
    4. end the game if there is a winner
