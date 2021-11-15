@@ -1,5 +1,6 @@
 import unittest
 import main
+from unittest import TestCase, mock
 
 
 class TestClass(unittest.TestCase):
@@ -79,6 +80,16 @@ class TestClass(unittest.TestCase):
     def test_playing(self):
         """Game simulation"""
         self.assertEqual(main.playing())
+
+
+class TestRandom(TestCase):
+
+    @mock.patch("TicTacToe.playing.random.choice")
+    def test_playing(self, mock_choice):
+        """Game simulation"""
+        mock_choice.side_effect = [2, 3, 5, 1, 7]
+        result = main.playing()
+        self.assertEqual(result, "X won")
 
 
 if __name__ == '__main__':
