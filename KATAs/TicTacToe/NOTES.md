@@ -40,3 +40,6 @@ Steps/Process:
 5. check draw
 
 DevOps:
+- do we need bigger board than 3x3
+- who should start the game
+- can we have more than 2 players
