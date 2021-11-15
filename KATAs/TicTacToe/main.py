@@ -42,4 +42,6 @@ def check_win_row(board, player):
         return False
 
 
+def check_win_diagonal(board, player):
+    return True
 

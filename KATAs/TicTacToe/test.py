@@ -62,6 +62,13 @@ class TestClass(unittest.TestCase):
         board = {1: 'O', 2: 'O', 3: ' ', 4: 'X', 5: ' ', 6: ' ', 7: 'X', 8: ' ', 9: ' '}
         self.assertEqual(main.check_win_row(board, "O"), False)
 
+    def test_check_win_diagonal(self):
+        """Check if  aplayer wins with a diagonal of same marks"""
+        board = {1: 'X', 2: 'O', 3: ' ', 4: 'X', 5: 'X', 6: ' ', 7: 'O', 8: 'O', 9: 'X'}
+        self.assertEqual(main.check_win_diagonal(board, "X"), "X won")
+        board = {1: 'O', 2: 'X', 3: ' ', 4: ' ', 5: 'O', 6: ' ', 7: 'X', 8: 'X', 9: 'O'}
+        self.assertEqual(main.check_win_diagonal(board, "O"), "O won")
+
 
 if __name__ == '__main__':
     unittest.main()
