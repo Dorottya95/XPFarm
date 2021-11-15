@@ -29,6 +29,7 @@ def check_win_col(board, player):
             (board[2] == player and board[5] == player and board[8] == player) or \
             (board[3] == player and board[6] == player and board[9] == player):
         return str(player) + " won"
-    else:
-        return False
+
+
+
 
