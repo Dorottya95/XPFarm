@@ -76,6 +76,10 @@ class TestClass(unittest.TestCase):
         board = {1: 'O', 2: 'O', 3: ' ', 4: 'X', 5: ' ', 6: ' ', 7: 'X', 8: ' ', 9: ' '}
         self.assertEqual(main.check_win_diagonal(board, "O"), False)
 
+    def test_playing(self):
+        """Game simulation"""
+        self.assertEqual(main.playing())
+
 
 if __name__ == '__main__':
     unittest.main()

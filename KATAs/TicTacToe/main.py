@@ -49,3 +49,7 @@ def check_win_diagonal(board, player):
     else:
         return False
 
+
+def playing():
+    return True
+
