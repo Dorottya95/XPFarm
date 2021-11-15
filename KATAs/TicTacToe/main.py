@@ -1,2 +1,2 @@
 def create_initial_board():
-    return
+    return False
