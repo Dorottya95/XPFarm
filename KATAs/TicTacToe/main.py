@@ -1,2 +1,2 @@
 def create_initial_board():
-    return False
+    return {k: v for k, v in zip(list(range(1, 10)), list(" " * 9))}
